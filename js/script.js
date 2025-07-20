@@ -48,7 +48,7 @@ function addLanguage (langName){
 addLanguage('Python')
 addLanguage('javascript')
 
-
+// optimize code
 function addOptiLanguage(langName){
  let li =   document.createElement('li')
  li.appendChild(document.createTextNode(langName))
@@ -58,3 +58,11 @@ function addOptiLanguage(langName){
 
 addOptiLanguage('c++')
 addLanguage('c')
+
+
+// edit
+let secondLang = document.querySelector('li:nth-child(2)')
+// secondLang.innerHTML = 'mongo'
+let newli = document.createElement('li')
+newli.textContent = 'php'
+secondLang.replaceWith(newli)
