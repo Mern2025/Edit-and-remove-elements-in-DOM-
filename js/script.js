@@ -38,4 +38,13 @@
 // banner.appendChild(div)
 
 
-
+// edit and remove elements in dom  
+function addLanguage (langName){
+  let li = document.createElement('li')
+  li.innerHTML = `${langName}`
+  let store = document.querySelector('.language')
+  store.appendChild(li)
+}
+addLanguage('Python')
+addLanguage('javascript')
+addLanguage('react')
