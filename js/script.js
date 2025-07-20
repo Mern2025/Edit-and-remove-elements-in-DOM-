@@ -47,4 +47,14 @@ function addLanguage (langName){
 }
 addLanguage('Python')
 addLanguage('javascript')
-addLanguage('react')
+
+
+function addOptiLanguage(langName){
+ let li =   document.createElement('li')
+ li.appendChild(document.createTextNode(langName))
+ let store2 = document.querySelector('.language')
+ store2.appendChild(li)
+}
+
+addOptiLanguage('c++')
+addLanguage('c')
