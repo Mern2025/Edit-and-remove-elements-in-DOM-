@@ -66,3 +66,9 @@ let secondLang = document.querySelector('li:nth-child(2)')
 let newli = document.createElement('li')
 newli.textContent = 'php'
 secondLang.replaceWith(newli)
+
+// remove
+let lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+
